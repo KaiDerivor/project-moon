@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->json('daily')->nullable()->after('day');
+            $table->json('daily')->nullable();
         });
     }
 
